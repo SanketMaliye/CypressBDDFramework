@@ -1,0 +1,35 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec cypress\\e2e\\feature\\login.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.12.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/Reports/cucumber-reports/cucumberResult.json"
+    },
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/step_definations/*.{js,ts}",
+      "cypress/e2e/common/*.{js,ts}",
+      "cypress/e2e/[filepath]/**/*.{js,ts}",
+      "cypress/e2e/[filepath].{js,ts}",
+      "cypress/support/step_definitions/**/*.{js,ts}"
+    ]
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-real-events": "^1.8.1"
+  }
+}

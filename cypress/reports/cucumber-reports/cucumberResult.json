@@ -1,0 +1,93 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "i-want-to-login-into-the-site-with-valid-data;login-as-new-sign-up-user-with-valid-data",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login as new sign up user with valid data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7939000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "validpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lambdatest@yopmail.com",
+                      "lambdatest"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I entered valid credential",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User click on sign in button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Validate the title after login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "i-want-to-login-into-the-site-with-valid-data",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "I want to login into the site with valid data",
+    "tags": [],
+    "uri": "cypress\\e2e\\feature\\login.feature"
+  }
+]
